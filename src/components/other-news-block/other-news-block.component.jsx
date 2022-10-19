@@ -6,15 +6,15 @@ import dataNews from "../../redux/static-data.json";
 
 const OtherNewsBlock = () => {
   const response = dataNews.data.twitter;
-  console.log(response)
   const listArray = response.slice(2);
-
 
   return (
     <div className="other-news-block">
       <Title>Другие новости</Title>
       <div className="other-news-block__list">
-        {listArray.map(item => <ListItem key={item.id} item={item} />)}
+        {listArray.map((item) => (
+          <ListItem key={item.id} item={item} />
+        ))}
       </div>
     </div>
   );
