@@ -1,0 +1,12 @@
+.news-block {
+  background: #ffffbe;
+  margin-top: 40px;
+  margin-inline: 122px;
+
+  &__image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 18px;
+  }
+}

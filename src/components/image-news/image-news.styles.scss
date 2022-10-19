@@ -1,0 +1,39 @@
+.image-news-container {
+  width: 588px;
+  height: 376px;
+
+  background: cornflowerblue;
+  border-radius: 30px;
+
+  color: #FFFFFF;
+
+  &__title {
+    position: relative;
+    width: 494px;
+    height: 127px;
+    left: 47px;
+    top: 238px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+
+
+  }
+
+  &__date {
+    position: relative;
+    width: 194px;
+    height: 20px;
+    left: 47px;
+    top: 200px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

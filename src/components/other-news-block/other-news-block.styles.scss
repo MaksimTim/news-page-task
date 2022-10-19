@@ -1,0 +1,12 @@
+.other-news-block {
+  background: #ffffbe;
+  margin-top: 40px;
+  margin-inline: 122px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+}
