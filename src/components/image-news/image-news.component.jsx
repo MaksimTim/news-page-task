@@ -1,13 +1,12 @@
 import React from "react";
 import "./image-news.styles.scss";
-import { monthArr } from "../../utils/month-array";
 import { getDateParams, textChanger } from "../../utils/utils";
 
 const ImageNews = ({ item }) => {
   const { text, created_at, postPhotos } = item;
 
   //утилиты приведения параметров к виду макета
-  const { day, monthInd, hour, minute } = getDateParams(created_at);
+  const { day, month, hour, minute } = getDateParams(created_at);
   const title = textChanger(text, 50);
 
   const photoUrl =
@@ -23,7 +22,7 @@ const ImageNews = ({ item }) => {
     >
       <div className="image-news-container__title">{title}</div>
       <div className="image-news-container__date">
-        {day} {monthArr[monthInd]} {hour}:{minute}
+        {day} {month} {hour}:{minute}
       </div>
     </div>
   );
